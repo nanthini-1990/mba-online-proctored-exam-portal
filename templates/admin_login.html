@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>
+        Host Login
+    </title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+
+            font-family:Arial,sans-serif;
+
+            background:
+            linear-gradient(
+            135deg,
+            #081b3a,
+            #0d6efd
+            );
+
+            min-height:100vh;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+            padding:20px;
+        }
+
+        .card{
+
+            background:white;
+            width:100%;
+            max-width:500px;
+
+            border-radius:25px;
+            padding:50px;
+
+            box-shadow:
+            0px 10px 30px
+            rgba(0,0,0,0.2);
+        }
+
+        h1{
+
+            text-align:center;
+            color:#081b3a;
+            margin-bottom:15px;
+        }
+
+        p{
+
+            text-align:center;
+            margin-bottom:30px;
+            color:#666;
+        }
+
+        label{
+
+            display:block;
+            margin-bottom:10px;
+            font-weight:bold;
+        }
+
+        input{
+
+            width:100%;
+            padding:18px;
+            border-radius:12px;
+            border:1px solid #ccc;
+
+            margin-bottom:20px;
+            font-size:18px;
+        }
+
+        .btn{
+
+            width:100%;
+            padding:18px;
+
+            border:none;
+            border-radius:12px;
+
+            background:green;
+            color:white;
+
+            font-size:20px;
+            cursor:pointer;
+        }
+
+        .back{
+
+            text-align:center;
+            margin-top:25px;
+        }
+
+        .back a{
+
+            text-decoration:none;
+            font-weight:bold;
+            color:#081b3a;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+    <h1>
+        Host Login
+    </h1>
+
+    <p>
+        Secure Examination Portal
+    </p>
+
+    <form method="POST"
+          action="/admin-login">
+
+        <label>
+            Username
+        </label>
+
+        <input
+            type="text"
+            name="username"
+            required>
+
+        <label>
+            Password
+        </label>
+
+        <input
+            type="password"
+            name="password"
+            required>
+
+        <button
+            class="btn"
+            type="submit">
+
+            Login
+
+        </button>
+
+    </form>
+
+    <div class="back">
+
+        <a href="/">
+
+            ← Back to Home
+
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>

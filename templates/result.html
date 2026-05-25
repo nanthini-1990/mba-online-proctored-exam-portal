@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>
+        Exam Submitted
+    </title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width,
+          initial-scale=1.0">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial,sans-serif;
+        }
+
+        body{
+
+            min-height:100vh;
+
+            background:#eef2f7;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+            padding:20px;
+        }
+
+        .card{
+
+            background:white;
+
+            width:100%;
+            max-width:700px;
+
+            border-radius:30px;
+
+            padding:55px;
+
+            text-align:center;
+
+            box-shadow:
+            0px 6px 25px
+            rgba(0,0,0,0.15);
+        }
+
+        .icon{
+
+            width:120px;
+            height:120px;
+
+            margin:auto;
+            margin-bottom:25px;
+
+            border-radius:50%;
+
+            background:green;
+            color:white;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+            font-size:60px;
+            font-weight:bold;
+        }
+
+        h1{
+            color:#081b3a;
+            margin-bottom:15px;
+        }
+
+        p{
+            color:#666;
+            font-size:20px;
+            line-height:1.8;
+        }
+
+        .score-box{
+
+            margin-top:35px;
+
+            background:#eef7ff;
+
+            padding:35px;
+
+            border-radius:22px;
+        }
+
+        .score-box h2{
+            color:#081b3a;
+            margin-bottom:15px;
+        }
+
+        .score{
+
+            font-size:60px;
+            font-weight:bold;
+            color:green;
+        }
+
+        .btn{
+
+            margin-top:35px;
+
+            border:none;
+            border-radius:15px;
+
+            padding:18px 38px;
+
+            background:#081b3a;
+            color:white;
+
+            font-size:20px;
+            cursor:pointer;
+        }
+
+        .btn:hover{
+            opacity:0.9;
+        }
+
+        @media(max-width:768px){
+
+            .card{
+                padding:35px 25px;
+            }
+
+            .icon{
+                width:100px;
+                height:100px;
+                font-size:50px;
+            }
+
+            .score{
+                font-size:46px;
+            }
+
+            p{
+                font-size:18px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="icon">
+
+        ✓
+
+    </div>
+
+
+    <h1>
+        Examination Submitted Successfully
+    </h1>
+
+    <p>
+
+        Your examination response
+        has been recorded successfully.
+
+        <br><br>
+
+        Thank you for attending the
+        ADMA IA1 Examination.
+
+    </p>
+
+
+    <div class="score-box">
+
+        <h2>
+            Marks Scored
+        </h2>
+
+        <div class="score">
+
+            {{ score }}/25
+
+        </div>
+
+    </div>
+
+
+    <button
+        class="btn"
+        onclick="
+        window.location.href=
+        '/student-login'">
+
+        Exit Portal
+
+    </button>
+
+</div>
+
+</body>
+</html>

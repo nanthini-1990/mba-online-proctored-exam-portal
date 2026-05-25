@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>
+        Exam Instructions
+    </title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width,
+          initial-scale=1.0">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial,sans-serif;
+        }
+
+        body{
+            background:#eef2f7;
+        }
+
+        .top-header{
+            background:#081b3a;
+            color:white;
+            padding:22px;
+            border-bottom:5px solid orange;
+        }
+
+        .top-header h1{
+            font-size:38px;
+        }
+
+        .top-header p{
+            margin-top:8px;
+            font-size:18px;
+        }
+
+        .container{
+            width:95%;
+            max-width:1200px;
+            margin:auto;
+            padding:25px;
+        }
+
+        .card{
+            background:white;
+            border-radius:25px;
+            padding:35px;
+            margin-bottom:30px;
+
+            box-shadow:
+            0px 4px 12px
+            rgba(0,0,0,0.1);
+        }
+
+        h2{
+            color:#081b3a;
+            margin-bottom:20px;
+            font-size:36px;
+        }
+
+        ul{
+            margin-left:30px;
+        }
+
+        li{
+            margin-bottom:18px;
+            font-size:24px;
+            line-height:1.8;
+        }
+
+        .camera-box{
+            text-align:center;
+        }
+
+        video{
+            width:100%;
+            max-width:550px;
+            border-radius:25px;
+            border:6px solid #081b3a;
+            background:#ddd;
+        }
+
+        #cameraStatus{
+            font-size:26px;
+            margin-top:20px;
+            font-weight:bold;
+        }
+
+        .btn{
+            width:100%;
+            max-width:450px;
+            padding:22px;
+            border:none;
+            border-radius:15px;
+            font-size:30px;
+            background:green;
+            color:white;
+            cursor:pointer;
+            margin-top:25px;
+        }
+
+        @media(max-width:768px){
+
+            .top-header h1{
+                font-size:28px;
+            }
+
+            .top-header p{
+                font-size:15px;
+            }
+
+            h2{
+                font-size:28px;
+            }
+
+            li{
+                font-size:19px;
+            }
+
+            .btn{
+                font-size:24px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="top-header">
+
+    <h1>
+        ADMA Internal Assessment 1
+    </h1>
+
+    <p>
+        Global Academy of Technology |
+        MBA Department |
+        Secure Proctored Examination
+    </p>
+
+</div>
+
+
+
+<div class="container">
+
+    <!-- INSTRUCTIONS -->
+
+    <div class="card">
+
+        <h2>
+            Examination Instructions
+        </h2>
+
+        <ul>
+
+            <li>
+                Random 25 questions will be displayed
+            </li>
+
+            <li>
+                Questions are shuffled for every student
+            </li>
+
+            <li>
+                Tab/App switching gives warning
+            </li>
+
+            <li>
+                After 3 warnings exam auto submits
+            </li>
+
+            <li>
+                Timer expiry auto submits exam
+            </li>
+
+            <li>
+                Copy/Paste disabled
+            </li>
+
+            <li>
+                Camera enabled if available
+            </li>
+
+            <li>
+                No-camera desktops are allowed
+            </li>
+
+        </ul>
+
+    </div>
+
+
+
+    <!-- CAMERA -->
+
+    <div class="card camera-box">
+
+        <h2>
+            Camera Preview
+        </h2>
+
+        <video id="video"
+               autoplay
+               muted
+               playsinline>
+        </video>
+
+        <div id="cameraStatus">
+
+            Checking Camera...
+
+        </div>
+
+
+        <button
+            id="startBtn"
+            class="btn">
+
+            Start Examination
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<script>
+
+const video =
+document.getElementById(
+    "video"
+);
+
+const cameraStatus =
+document.getElementById(
+    "cameraStatus"
+);
+
+
+// ================= CAMERA ================= //
+
+function noCameraMode(){
+
+    cameraStatus.innerHTML =
+    "No Camera Device - Exam Allowed";
+
+    cameraStatus.style.color =
+    "orange";
+
+    video.style.display =
+    "none";
+}
+
+
+if(
+    navigator.mediaDevices &&
+    navigator.mediaDevices.getUserMedia
+){
+
+    navigator.mediaDevices
+    .getUserMedia({
+        video:true
+    })
+
+    .then(function(stream){
+
+        video.srcObject =
+        stream;
+
+        cameraStatus.innerHTML =
+        "Camera Active";
+
+        cameraStatus.style.color =
+        "green";
+    })
+
+    .catch(function(){
+
+        noCameraMode();
+    });
+
+}
+else{
+
+    noCameraMode();
+}
+
+
+
+// ================= START EXAM ================= //
+
+document.getElementById(
+    "startBtn"
+).addEventListener(
+    "click",
+    function(){
+
+        window.location.href =
+        "/start-exam";
+    }
+);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ADMA IA1 Exam</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial,sans-serif;
+        }
+
+        body{
+            background:#f4f6f9;
+        }
+
+        .header{
+            background:#002b5c;
+            color:white;
+            padding:15px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            position:sticky;
+            top:0;
+            z-index:999;
+        }
+
+        .header h2{
+            font-size:24px;
+        }
+
+        #timer{
+            font-size:24px;
+            font-weight:bold;
+            color:yellow;
+        }
+
+        .main{
+            display:flex;
+            gap:20px;
+            padding:20px;
+        }
+
+        .questions{
+            flex:3;
+        }
+
+        .question-card{
+            background:white;
+            padding:20px;
+            border-radius:15px;
+            margin-bottom:20px;
+            box-shadow:0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .question-card h3{
+            margin-bottom:15px;
+        }
+
+        .question-card label{
+            display:block;
+            margin:10px 0;
+            font-size:18px;
+            cursor:pointer;
+        }
+
+        .sidebar{
+            flex:1;
+        }
+
+        .camera-box,
+        .warning-box{
+            background:white;
+            padding:20px;
+            border-radius:20px;
+            text-align:center;
+            margin-bottom:20px;
+            box-shadow:0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        video{
+            width:100%;
+            height:250px;
+            border-radius:15px;
+            border:4px solid #002b5c;
+            object-fit:cover;
+            background:#ddd;
+        }
+
+        button{
+            background:green;
+            color:white;
+            border:none;
+            padding:15px 35px;
+            font-size:20px;
+            border-radius:10px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:darkgreen;
+        }
+
+        @media(max-width:768px){
+
+            .main{
+                flex-direction:column;
+            }
+
+            video{
+                height:180px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="header">
+    <h2>ADMA IA1 Examination</h2>
+
+    <div>
+        Time Left:
+        <span id="timer">30:00</span>
+    </div>
+</div>
+
+<form id="examForm"
+      method="POST"
+      action="/submit-exam">
+
+    <input type="hidden"
+           name="warnings"
+           id="warnings"
+           value="0">
+
+    <input type="hidden"
+           name="auto_submitted"
+           id="auto_submitted"
+           value="No">
+
+    <input type="hidden"
+           name="camera_status"
+           id="camera_status"
+           value="Unknown">
+
+    <div class="main">
+
+        <div class="questions">
+
+            {% for q in questions %}
+
+            <div class="question-card">
+
+                <h3>
+                    Q{{ loop.index }}.
+                    {{ q.question }}
+                </h3>
+
+                <!-- FIXED OPTIONS -->
+
+                <label>
+                    <input type="radio"
+                           name="question_{{ q.id }}"
+                           value="A">
+                    {{ q.option_a[3:] if q.option_a.startswith('A) ') else q.option_a }}
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="question_{{ q.id }}"
+                           value="B">
+                    {{ q.option_b[3:] if q.option_b.startswith('B) ') else q.option_b }}
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="question_{{ q.id }}"
+                           value="C">
+                    {{ q.option_c[3:] if q.option_c.startswith('C) ') else q.option_c }}
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="question_{{ q.id }}"
+                           value="D">
+                    {{ q.option_d[3:] if q.option_d.startswith('D) ') else q.option_d }}
+                </label>
+
+            </div>
+
+            {% endfor %}
+
+            <center>
+                <button type="submit">
+                    Submit Exam
+                </button>
+            </center>
+
+        </div>
+
+        <div class="sidebar">
+
+            <div class="camera-box">
+
+                <h2>Live Proctor Camera</h2>
+
+                <br>
+
+                <video id="video"
+                       autoplay
+                       muted
+                       playsinline>
+                </video>
+
+                <br><br>
+
+                <h3 id="cameraText">
+                    Camera Loading...
+                </h3>
+
+            </div>
+
+            <div class="warning-box">
+
+                <h2>
+                    Warning Count
+                </h2>
+
+                <br>
+
+                <h1>
+                    <span id="warning-side">
+                        0
+                    </span>/3
+                </h1>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</form>
+
+<script>
+
+let warningCount = 0;
+let examSubmitted = false;
+let tabHidden = false;
+
+
+// ================= CAMERA ================= //
+
+const video =
+document.getElementById("video");
+
+if(
+    navigator.mediaDevices &&
+    navigator.mediaDevices.getUserMedia
+){
+
+    navigator.mediaDevices
+    .getUserMedia({
+        video:true
+    })
+
+    .then(function(stream){
+
+        video.srcObject = stream;
+
+        document.getElementById(
+            "camera_status"
+        ).value =
+        "Available";
+
+        document.getElementById(
+            "cameraText"
+        ).innerHTML =
+        "Camera Active";
+    })
+
+    .catch(function(){
+
+        document.getElementById(
+            "camera_status"
+        ).value =
+        "No Camera";
+
+        document.getElementById(
+            "cameraText"
+        ).innerHTML =
+        "No Camera - Exam Allowed";
+    });
+
+}else{
+
+    document.getElementById(
+        "camera_status"
+    ).value =
+    "No Camera";
+
+    document.getElementById(
+        "cameraText"
+    ).innerHTML =
+    "No Camera - Exam Allowed";
+}
+
+
+
+// ================= TIMER ================= //
+
+let timeLeft = 30 * 60;
+
+let timer = setInterval(function(){
+
+    if(examSubmitted){
+        clearInterval(timer);
+        return;
+    }
+
+    let minutes =
+    Math.floor(timeLeft/60);
+
+    let seconds =
+    timeLeft%60;
+
+    document.getElementById(
+        "timer"
+    ).innerHTML =
+
+        minutes +
+        ":" +
+        (seconds < 10 ? "0":"")
+        + seconds;
+
+    timeLeft--;
+
+    if(timeLeft < 0){
+
+        examSubmitted = true;
+
+        document.getElementById(
+            "auto_submitted"
+        ).value =
+        "Yes";
+
+        alert(
+            "Time Over. Exam auto submitted."
+        );
+
+        document.getElementById(
+            "examForm"
+        ).submit();
+    }
+
+},1000);
+
+
+
+// ================= WARNING ================= //
+
+function giveWarning(){
+
+    if(examSubmitted)
+        return;
+
+    if(warningCount >=3)
+        return;
+
+    warningCount++;
+
+    document.getElementById(
+        "warning-side"
+    ).innerHTML =
+    warningCount;
+
+    document.getElementById(
+        "warnings"
+    ).value =
+    warningCount;
+
+    if(warningCount < 3){
+
+        alert(
+            "Warning "
+            + warningCount +
+            "/3\n\n"
+            + "Tab/App switching detected.\n"
+            + "Please continue exam."
+        );
+
+        return;
+    }
+
+    examSubmitted = true;
+
+    document.getElementById(
+        "auto_submitted"
+    ).value =
+    "Yes";
+
+    alert(
+        "3 warnings exceeded.\nExam auto submitted."
+    );
+
+    document.getElementById(
+        "examForm"
+    ).submit();
+}
+
+
+
+// ================= TAB SWITCH ONLY ================= //
+
+document.addEventListener(
+    "visibilitychange",
+    function(){
+
+        if(document.hidden){
+
+            if(
+                !tabHidden &&
+                !examSubmitted
+            ){
+
+                tabHidden = true;
+
+                setTimeout(function(){
+
+                    if(document.hidden){
+
+                        giveWarning();
+                    }
+
+                },1000);
+            }
+
+        }else{
+
+            tabHidden = false;
+        }
+    }
+);
+
+
+
+// ================= BLOCK COPY ================= //
+
+["copy","paste","contextmenu"]
+.forEach(evt => {
+
+    document.addEventListener(
+        evt,
+        e => e.preventDefault()
+    );
+
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>
+        Student Login
+    </title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width,
+          initial-scale=1.0">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial,sans-serif;
+        }
+
+        body{
+
+            min-height:100vh;
+
+            background:
+            linear-gradient(
+            135deg,
+            #081b3a,
+            #0d6efd
+            );
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+            padding:20px;
+        }
+
+        .card{
+
+            background:white;
+
+            width:100%;
+            max-width:520px;
+
+            border-radius:28px;
+
+            padding:50px;
+
+            box-shadow:
+            0px 10px 30px
+            rgba(0,0,0,0.2);
+        }
+
+        h1{
+            text-align:center;
+            color:#081b3a;
+            margin-bottom:10px;
+        }
+
+        p{
+            text-align:center;
+            color:#666;
+            margin-bottom:35px;
+        }
+
+        label{
+            display:block;
+            margin-bottom:10px;
+            font-weight:bold;
+            color:#081b3a;
+        }
+
+        input{
+
+            width:100%;
+            padding:18px;
+
+            border-radius:12px;
+            border:1px solid #ccc;
+
+            margin-bottom:22px;
+            font-size:18px;
+        }
+
+        .btn{
+
+            width:100%;
+
+            border:none;
+            border-radius:14px;
+
+            padding:18px;
+
+            background:#0d6efd;
+            color:white;
+
+            font-size:22px;
+            cursor:pointer;
+        }
+
+        .btn:hover{
+            opacity:0.9;
+        }
+
+        .bottom{
+            text-align:center;
+            margin-top:25px;
+        }
+
+        .bottom a{
+            text-decoration:none;
+            color:#081b3a;
+            font-weight:bold;
+        }
+
+        @media(max-width:768px){
+
+            .card{
+                padding:35px 25px;
+            }
+
+            h1{
+                font-size:30px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+    <h1>
+        Student Login
+    </h1>
+
+    <p>
+        ADMA IA1 Secure Examination Portal
+    </p>
+
+
+    <form method="POST">
+
+        <label>
+            USN
+        </label>
+
+        <input
+            type="text"
+            name="usn"
+            placeholder="Enter USN"
+            required>
+
+
+        <label>
+            Password
+        </label>
+
+        <input
+            type="password"
+            name="password"
+            placeholder="Enter Password"
+            required>
+
+
+        <button
+            class="btn"
+            type="submit">
+
+            Login
+
+        </button>
+
+    </form>
+
+
+    <div class="bottom">
+
+        <a href="/">
+
+            ← Back to Home
+
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,699 @@
+Q1. What is JMP mainly used for?
+A) Video Editing
+B) Statistical Data Analysis
+C) Gaming
+D) Animation
+Answer: B) Statistical Data Analysis
+
+Q2. Which menu in JMP is commonly used to analyze data?
+A) File
+B) Analyze
+C) Window
+D) Help
+Answer: B) Analyze
+
+Q3. Which option is used to enter or import data into JMP?
+A) File Menu
+B) Graph Menu
+C) Help Menu
+D) Student Menu
+Answer: A) File Menu
+
+Q4. What is the purpose of data entry in JMP?
+A) Entering values into worksheet
+B) Playing videos
+C) Creating games
+D) Formatting computer screen
+Answer: A) Entering values into worksheet
+
+Q5. What is the purpose of editing data in JMP?
+A) To modify incorrect values
+B) To play games
+C) To install software
+D) To browse internet
+Answer: A) To modify incorrect values
+
+Q6. Why is data formatting important in JMP?
+A) To decorate worksheet
+B) To organize and structure data properly
+C) To delete variables
+D) To increase internet speed
+Answer: B) To organize and structure data properly
+
+Q7. What is data transformation used for in JMP?
+A) To change data format or values
+B) To edit images
+C) To delete software
+D) To browse internet
+Answer: A) To change data format or values
+
+Q8. Which symbol commonly represents missing values in JMP?
+A) @
+B) #
+C) . (dot)
+D) &
+Answer: C) . (dot)
+
+Q9. Missing value analysis is used to identify:
+A) Missing information in dataset
+B) Password errors
+C) Internet problems
+D) Duplicate images
+Answer: A) Missing information in dataset
+
+Q10. Why is missing value handling important?
+A) To improve data quality
+B) To increase internet speed
+C) To install software
+D) To reduce battery usage
+Answer: A) To improve data quality
+
+Q11. Data validation is mainly used to:
+A) Check data accuracy
+B) Create animations
+C) Open websites
+D) Print documents
+Answer: A) Check data accuracy
+
+Q12. Reliability analysis checks:
+A) Data consistency
+B) Software speed
+C) Internet connection
+D) Screen brightness
+Answer: A) Data consistency
+
+Q13. Reliability analysis is commonly used to test:
+A) Questionnaire consistency
+B) Monitor quality
+C) Sound system
+D) Password strength
+Answer: A) Questionnaire consistency
+
+Q14. Which menu helps in creating charts in JMP?
+A) Analyze
+B) Graph
+C) Window
+D) Help
+Answer: B) Graph
+
+Q15. Which JMP feature is mainly used for data visualization?
+A) Graph Builder
+B) File Builder
+C) Window Builder
+D) Text Builder
+Answer: A) Graph Builder
+
+Q16. Which analysis summarizes data using measures like mean and median?
+A) Descriptive Analysis
+B) Browser Analysis
+C) Animation Analysis
+D) Internet Analysis
+Answer: A) Descriptive Analysis
+
+Q17. Which measure represents the average value?
+A) Median
+B) Mean
+C) Range
+D) Variance
+Answer: B) Mean
+
+Q18. Which measure shows the middle value of data?
+A) Range
+B) Standard Deviation
+C) Median
+D) Count
+Answer: C) Median
+
+Q19. Which measure shows variability in data?
+A) Mean
+B) Standard Deviation
+C) Median
+D) Mode
+Answer: B) Standard Deviation
+
+Q20. Which graph is commonly used to show frequency distribution?
+A) Histogram
+B) Pie Chart
+C) Scatter Plot
+D) Radar Chart
+Answer: A) Histogram
+
+Q21. Which graph is used to show relationship between two variables?
+A) Scatter Plot
+B) Pie Chart
+C) Histogram
+D) Table
+Answer: A) Scatter Plot
+
+Q22. Which chart is useful to compare categories?
+A) Bar Chart
+B) Scatter Plot
+C) Histogram
+D) Table
+Answer: A) Bar Chart
+
+Q23. Which chart is useful to show trends over time?
+A) Pie Chart
+B) Table
+C) Histogram
+D) Line Chart
+Answer: D) Line Chart
+
+Q24. Frequency analysis mainly shows:
+A) Passwords
+B) Internet usage
+C) Number of occurrences
+D) File size
+Answer: C) Number of occurrences
+
+Q25. What does “N” represent in JMP output?
+A) Number of observations
+B) Network
+C) Name
+D) Node
+Answer: A) Number of observations
+
+Q26. Which value shows the highest observation in a dataset?
+A) Minimum
+B) Mean
+C) Maximum
+D) Median
+Answer: C) Maximum
+
+Q27. Which value represents the smallest observation?
+A) Mean
+B) Minimum
+C) Maximum
+D) Median
+Answer: B) Minimum
+
+Q28. Quartiles divide the data into:
+A) 2 parts
+B) 3 parts
+C) 4 parts
+D) 5 parts
+Answer: C) 4 parts
+
+Q29. What is the purpose of Exploratory Factor Analysis?
+A) To reduce variables into fewer factors
+B) To create videos
+C) To delete files
+D) To browse websites
+Answer: A) To reduce variables into fewer factors
+
+Q30. Which plot is used in factor analysis to determine the number of factors?
+A) Histogram
+B) Pie Chart
+C) Scree Plot
+D) Bar Chart
+Answer: C) Scree Plot
+
+Q31. In factor analysis, eigenvalue is used to:
+A) Determine factor importance
+B) Save files
+C) Create passwords
+D) Increase speed
+Answer: A) Determine factor importance
+
+Q32. Factors are generally selected when eigenvalue is:
+A) Less than 0
+B) Equal to 0
+C) Greater than 1
+D) Equal to 10
+Answer: C) Greater than 1
+
+Q33. Rotated factor loading helps in:
+A) Better interpretation
+B) File saving
+C) Data deletion
+D) Internet access
+Answer: A) Better interpretation
+
+Q34. Cluster analysis is mainly used to:
+A) Group similar observations
+B) Create passwords
+C) Delete graphs
+D) Open websites
+Answer: A) Group similar observations
+
+Q35. Which analysis helps group similar customers?
+A) Cluster Analysis
+B) Histogram
+C) Frequency Analysis
+D) Crosstabulation
+Answer: A) Cluster Analysis
+
+Q36. Cross tabulation is used to study:
+A) Relationship between categorical variables
+B) Numerical equations only
+C) Software installation
+D) File editing
+Answer: A) Relationship between categorical variables
+
+Q37. Which type of variables are mainly used in cross tabulation?
+A) Numerical variables only
+B) Date variables only
+C) Missing variables
+D) Categorical variables
+Answer: D) Categorical variables
+
+Q38. Which JMP platform summarizes distributions?
+A) Browser Platform
+B) Distribution Platform
+C) Internet Platform
+D) Window Platform
+Answer: B) Distribution Platform
+
+Q39. Which graph is useful to understand distribution of data?
+A) Histogram
+B) Table
+C) Word document
+D) Browser
+Answer: A) Histogram
+
+Q40. JMP software is mainly useful for:
+A) Statistical analysis and visualization
+B) Video gaming
+C) Movie editing
+D) Audio editing
+Answer: A) Statistical analysis and visualization
+
+Q41. Which menu in JMP is mainly used to perform statistical analysis?
+A) Window
+B) Analyze
+C) Help
+D) Student
+Answer: B) Analyze
+
+Q42. Which analysis in JMP is mainly used to summarize numerical data?
+A) Descriptive Analysis
+B) Cluster Analysis
+C) Regression Analysis
+D) Animation Analysis
+Answer: A) Descriptive Analysis
+
+Q43. Which graph is commonly used to compare frequencies across categories?
+A) Scatter Plot
+B) Histogram
+C) Bar Chart
+D) Line Chart
+Answer: C) Bar Chart
+
+Q44. Which JMP tool is commonly used to visualize data interactively?
+A) Window Builder
+B) Graph Builder
+C) File Builder
+D) Help Builder
+Answer: B) Graph Builder
+
+Q45. Which analysis is mainly used to group similar observations into categories?
+A) Regression Analysis
+B) Cluster Analysis
+C) Crosstabulation
+D) Missing Value Analysis
+Answer: B) Cluster Analysis
+
+Q46. Which option in JMP is used to enter data manually?
+A) Data Table
+B) Browser
+C) Video Tool
+D) Audio Tool
+Answer: A) Data Table
+
+Q47. Which menu is used to save a JMP file?
+A) Graph
+B) File
+C) Analyze
+D) Student
+Answer: B) File
+
+Q48. Which graph is suitable for comparing values between categories?
+A) Scatter Plot
+B) Histogram
+C) Bar Chart
+D) Pie Chart
+Answer: C) Bar Chart
+
+Q49. Which graph is useful to observe trends in data?
+A) Pie Chart
+B) Table
+C) Histogram
+D) Line Chart
+Answer: D) Line Chart
+
+Q50. What is the purpose of descriptive statistics?
+A) Summarize data
+B) Create passwords
+C) Browse internet
+D) Edit videos
+Answer: A) Summarize data
+
+Q51. Which option in JMP is used to import data from Excel?
+A) File Import
+B) Browser
+C) Help
+D) Window
+Answer: A) File Import
+
+Q52. Which process helps convert data into a useful format?
+A) Data Transformation
+B) Video Editing
+C) Password Setting
+D) File Browsing
+Answer: A) Data Transformation
+
+Q53. Which analysis helps identify missing information in a dataset?
+A) Regression Analysis
+B) Missing Value Analysis
+C) Cluster Analysis
+D) Frequency Analysis
+Answer: B) Missing Value Analysis
+
+Q54. Which symbol is commonly used for missing values in JMP?
+A) &
+B) #
+C) . (dot)
+D) @
+Answer: C) . (dot)
+
+Q55. Which measure identifies the center of a dataset?
+A) Mean
+B) Variance
+C) Standard deviation
+D) Range
+Answer: A) Mean
+
+Q56. Which graph is commonly used to display categorical data?
+A) Scatter Plot
+B) Bar Chart
+C) Histogram
+D) Line Chart
+Answer: B) Bar Chart
+
+Q57. Which graph is best for showing continuous data distribution?
+A) Pie Chart
+B) Histogram
+C) Table
+D) Bar Chart
+Answer: B) Histogram
+
+Q58. Which analysis helps summarize data using mean, median, and standard deviation?
+A) Descriptive Analysis
+B) Image Analysis
+C) Animation Analysis
+D) Web Analysis
+Answer: A) Descriptive Analysis
+
+Q59. Which JMP feature helps create interactive graphs?
+A) File Builder
+B) Graph Builder
+C) Browser Builder
+D) Window Builder
+Answer: B) Graph Builder
+
+Q60. What is the purpose of frequency analysis?
+A) To count occurrences
+B) To create passwords
+C) To browse websites
+D) To delete records
+Answer: A) To count occurrences
+
+Q61. Which graph helps study the relationship between two variables?
+A) Scatter Plot
+B) Pie Chart
+C) Histogram
+D) Table
+Answer: A) Scatter Plot
+
+Q62. Which menu is commonly used to create visualizations in JMP?
+A) Help
+B) Analyze
+C) Graph
+D) Student
+Answer: C) Graph
+
+Q63. Which analysis helps group similar objects together?
+A) Regression Analysis
+B) Cluster Analysis
+C) Crosstabulation
+D) Missing Value Analysis
+Answer: B) Cluster Analysis
+
+Q64. Which clustering method is available in JMP?
+A) K-Means Clustering
+B) Password Clustering
+C) Browser Clustering
+D) Audio Clustering
+Answer: A) K-Means Clustering
+
+Q65. Which clustering method displays a dendrogram?
+A) Frequency Analysis
+B) Hierarchical Clustering
+C) Regression Analysis
+D) Data Formatting
+Answer: B) Hierarchical Clustering
+
+Q66. What is a dendrogram used for?
+A) Showing clusters
+B) Creating passwords
+C) Editing images
+D) Importing data
+Answer: A) Showing clusters
+
+Q67. Which analysis studies relationships between categories?
+A) Cross Tabulation
+B) Histogram
+C) Regression
+D) Animation
+Answer: A) Cross Tabulation
+
+Q68. Which variables are mainly used in cross tabulation?
+A) Numerical variables
+B) Categorical variables
+C) Image variables
+D) Video variables
+Answer: B) Categorical variables
+
+Q69. Which graph is suitable for displaying trends over time?
+A) Pie Chart
+B) Histogram
+C) Line Chart
+D) Scatter Plot
+Answer: C) Line Chart
+
+Q70. Which graph is useful for comparing categories?
+A) Histogram
+B) Scatter Plot
+C) Bar Chart
+D) Table
+Answer: C) Bar Chart
+
+Q71. Which measure shows the spread of data?
+A) Mean
+B) Standard Deviation
+C) Median
+D) Mode
+Answer: B) Standard Deviation
+
+Q72. Which measure identifies the middle observation?
+A) Mean
+B) Median
+C) Mode
+D) Variance
+Answer: B) Median
+
+Q73. Which menu option is used to open sample datasets in JMP?
+A) File
+B) Analyze
+C) Help
+D) Graph
+Answer: A) File
+
+Q74. What is the purpose of editing data?
+A) Correcting values
+B) Creating passwords
+C) Watching videos
+D) Opening websites
+Answer: A) Correcting values
+
+Q75. Which option helps validate accuracy of data?
+A) Data Validation
+B) Video Validation
+C) Password Validation
+D) Browser Validation
+Answer: A) Data Validation
+
+Q76. Which analysis checks questionnaire consistency?
+A) Reliability Analysis
+B) Frequency Analysis
+C) Regression Analysis
+D) Cluster Analysis
+Answer: A) Reliability Analysis
+
+Q77. Which graph type is used to compare frequencies?
+A) Histogram
+B) Bar Chart
+C) Pie Chart
+D) Table
+Answer: B) Bar Chart
+
+Q78. Which graph type helps show data distribution?
+A) Histogram
+B) Line Chart
+C) Pie Chart
+D) Browser
+Answer: A) Histogram
+
+Q79. Which output provides summary statistics?
+A) Distribution Output
+B) Browser Output
+C) Login Output
+D) Window Output
+Answer: A) Distribution Output
+
+Q80. What does frequency analysis mainly provide?
+A) Counts of observations
+B) Password details
+C) Website links
+D) Image files
+Answer: A) Counts of observations
+
+Q81. Which analysis reduces variables into fewer factors?
+A) Factor Analysis
+B) Regression Analysis
+C) Missing Value Analysis
+D) File Analysis
+Answer: A) Factor Analysis
+
+Q82. Which plot helps select factors in factor analysis?
+A) Histogram
+B) Scatter Plot
+C) Scree Plot
+D) Pie Chart
+Answer: C) Scree Plot
+
+Q83. What does eigenvalue indicate?
+A) Factor importance
+B) Internet speed
+C) File size
+D) Screen size
+Answer: A) Factor importance
+
+Q84. Which method improves interpretation in factor analysis?
+A) Rotation
+B) Animation
+C) File editing
+D) Browsing
+Answer: A) Rotation
+
+Q85. Which JMP platform helps analyze distributions?
+A) Distribution Platform
+B) Browser Platform
+C) Student Platform
+D) Window Platform
+Answer: A) Distribution Platform
+
+Q86. Which menu contains clustering tools?
+A) File
+B) Analyze
+C) Help
+D) Graph
+Answer: B) Analyze
+
+Q87. Which menu contains Graph Builder?
+A) Graph
+B) File
+C) Help
+D) Window
+Answer: A) Graph
+
+Q88. Which analysis helps understand data patterns?
+A) Factor Analysis
+B) Video Analysis
+C) Browser Analysis
+D) Audio Analysis
+Answer: A) Factor Analysis
+
+Q89. Which value indicates the lowest observation?
+A) Minimum
+B) Maximum
+C) Median
+D) Mean
+Answer: A) Minimum
+
+Q90. Which value indicates the highest observation?
+A) Mean
+B) Maximum
+C) Minimum
+D) Range
+Answer: B) Maximum
+
+Q91. Which graph compares different categories visually?
+A) Bar Chart
+B) Histogram
+C) Scatter Plot
+D) Table
+Answer: A) Bar Chart
+
+Q92. Which graph helps observe a trend?
+A) Pie Chart
+B) Line Chart
+C) Table
+D) Histogram
+Answer: B) Line Chart
+
+Q93. Which analysis helps predict relationships between variables?
+A) Regression Analysis
+B) Cluster Analysis
+C) Crosstabulation
+D) Frequency Analysis
+Answer: A) Regression Analysis
+
+Q94. Which platform in JMP helps describe data distributions?
+A) Distribution Platform
+B) Window Platform
+C) Browser Platform
+D) Audio Platform
+Answer: A) Distribution Platform
+
+Q95. Which process helps clean incorrect data values?
+A) Data Editing
+B) Video Editing
+C) Password Editing
+D) Animation
+Answer: A) Data Editing
+
+Q96. Which graph is useful for numerical relationships?
+A) Scatter Plot
+B) Pie Chart
+C) Table
+D) Histogram
+Answer: A) Scatter Plot
+
+Q97. Which analysis groups observations based on similarity?
+A) Cluster Analysis
+B) Regression Analysis
+C) Missing Value Analysis
+D) Crosstabulation
+Answer: A) Cluster Analysis
+
+Q98. Which menu option is used to import datasets?
+A) File
+B) Help
+C) Student
+D) Window
+Answer: A) File
+
+Q99. Which analysis helps summarize survey responses?
+A) Cross Tabulation
+B) Animation Analysis
+C) Browser Analysis
+D) Video Analysis
+Answer: A) Cross Tabulation
+
+Q100. JMP software is mainly useful for:
+A) Statistical analysis and visualization
+B) Movie editing
+C) Gaming
+D) Audio editing
+Answer: A) Statistical analysis and visualization
